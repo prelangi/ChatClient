@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Chats-->
+        <scene sceneID="hLX-gX-6gW">
+            <objects>
+                <viewController id="vLK-ex-zyK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T7K-la-IbL"/>
+                        <viewControllerLayoutGuide type="bottom" id="tmL-ez-qlu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ti5-dX-E9F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6tj-L7-KpZ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6tj-L7-KpZ" firstAttribute="leading" secondItem="Ti5-dX-E9F" secondAttribute="leading" id="57I-8R-oeF"/>
+                            <constraint firstItem="tmL-ez-qlu" firstAttribute="top" secondItem="6tj-L7-KpZ" secondAttribute="bottom" id="RK5-au-UqB"/>
+                            <constraint firstAttribute="trailing" secondItem="6tj-L7-KpZ" secondAttribute="trailing" id="uCK-D2-Vfs"/>
+                            <constraint firstItem="6tj-L7-KpZ" firstAttribute="top" secondItem="T7K-la-IbL" secondAttribute="bottom" id="z1u-1u-9CP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chats" id="a1O-pw-vW6">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="6Ue-zC-FMr"/>
+                        <barButtonItem key="rightBarButtonItem" image="Edit-24" id="nYt-ji-7HP"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JF7-ym-TP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gm6-do-vOM">
+            <objects>
+                <navigationController storyboardIdentifier="ChatsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="nCV-vS-dld" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="72R-EA-7NT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vLK-ex-zyK" kind="relationship" relationship="rootViewController" id="OyR-K5-LHI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLN-8A-Ps1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Edit-24" width="24" height="24"/>
+    </resources>
+</document>
