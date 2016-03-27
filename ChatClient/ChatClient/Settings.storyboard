@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="9gW-Tb-DZO">
             <objects>
-                <viewController storyboardIdentifier="SettingsNavigationController" id="sLD-Uk-zzA" sceneMemberID="viewController">
+                <viewController id="sLD-Uk-zzA" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uK5-zX-g6P"/>
                         <viewControllerLayoutGuide type="bottom" id="nHo-Ws-Exo"/>
@@ -18,10 +18,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3O4-Cl-y4E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jg8-vp-ZZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="171.19999999999999" y="399.49333333333334"/>
+            <point key="canvasLocation" x="703" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="afj-8i-YDP">
+            <objects>
+                <navigationController storyboardIdentifier="SettingsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="EbH-pd-gAm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mZo-zi-ftR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sLD-Uk-zzA" kind="relationship" relationship="rootViewController" id="3Xz-RO-h2t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQN-16-pb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="399"/>
         </scene>
     </scenes>
 </document>

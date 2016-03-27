@@ -9,13 +9,35 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let chatsStoryBoard = UIStoryboard(name: "Chats", bundle: nil)
+        let chatsNVC = chatsStoryBoard.instantiateViewControllerWithIdentifier("ChatsNavigationController") as! UINavigationController
+        chatsNVC.tabBarItem.title = "Chats"
+        chatsNVC.tabBarItem.image = UIImage(named: "Chats-30")
+        
+        let contactsStoryBoard = UIStoryboard(name: "Contacts", bundle: nil)
+        let contactsNVC = contactsStoryBoard.instantiateViewControllerWithIdentifier("ContactsNavigationController") as! UINavigationController
+        contactsNVC.tabBarItem.title = "Contacts"
+        contactsNVC.tabBarItem.image = UIImage(named: "Contacts-30")
+        
+        let settingsStoryBoard = UIStoryboard(name: "Settings", bundle: nil)
+        let settingsNVC = settingsStoryBoard.instantiateViewControllerWithIdentifier("SettingsNavigationController") as! UINavigationController
+        settingsNVC.tabBarItem.title = "Settings"
+        settingsNVC.tabBarItem.image = UIImage(named: "Settings-30")
+        
+        let tabBarController = UITabBarController()
+        tabBarController.delegate = self
+        tabBarController.viewControllers = [contactsNVC,chatsNVC,settingsNVC]
+        
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
