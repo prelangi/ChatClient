@@ -8,7 +8,7 @@
         <!--Chats-->
         <scene sceneID="hLX-gX-6gW">
             <objects>
-                <viewController id="vLK-ex-zyK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatsViewController" id="vLK-ex-zyK" customClass="ChatsViewController" customModule="ChatClient" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T7K-la-IbL"/>
                         <viewControllerLayoutGuide type="bottom" id="tmL-ez-qlu"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6tj-L7-KpZ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -27,13 +27,16 @@
                             <constraint firstItem="6tj-L7-KpZ" firstAttribute="leading" secondItem="Ti5-dX-E9F" secondAttribute="leading" id="57I-8R-oeF"/>
                             <constraint firstItem="tmL-ez-qlu" firstAttribute="top" secondItem="6tj-L7-KpZ" secondAttribute="bottom" id="RK5-au-UqB"/>
                             <constraint firstAttribute="trailing" secondItem="6tj-L7-KpZ" secondAttribute="trailing" id="uCK-D2-Vfs"/>
-                            <constraint firstItem="6tj-L7-KpZ" firstAttribute="top" secondItem="T7K-la-IbL" secondAttribute="bottom" id="z1u-1u-9CP"/>
+                            <constraint firstItem="6tj-L7-KpZ" firstAttribute="top" secondItem="T7K-la-IbL" secondAttribute="bottom" constant="-64" id="z1u-1u-9CP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chats" id="a1O-pw-vW6">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="6Ue-zC-FMr"/>
                         <barButtonItem key="rightBarButtonItem" image="Edit-24" id="nYt-ji-7HP"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="6tj-L7-KpZ" id="cVI-o4-05O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JF7-ym-TP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

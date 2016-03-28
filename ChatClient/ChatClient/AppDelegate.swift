@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate
         // Override point for customization after application launch.
         let chatsStoryBoard = UIStoryboard(name: "Chats", bundle: nil)
         let chatsNVC = chatsStoryBoard.instantiateViewControllerWithIdentifier("ChatsNavigationController") as! UINavigationController
+        let chatsViewController = chatsStoryBoard.instantiateViewControllerWithIdentifier("ChatsViewController")
+        //chatsNVC.viewControllers = [chatsViewController
         chatsNVC.tabBarItem.title = "Chats"
         chatsNVC.tabBarItem.image = UIImage(named: "Chats-30")
         

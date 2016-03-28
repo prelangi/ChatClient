@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="92" id="KGk-i7-Jjw" customClass="ChatCell" customModule="ChatClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DeQ-Wn-K8M">
+                        <rect key="frame" x="15" y="21" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="coy-An-tcv"/>
+                            <constraint firstAttribute="width" constant="50" id="vZg-g5-qCV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aswani Nerella" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-a0-SqX">
+                        <rect key="frame" x="75" y="8" width="108.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call cheyyi..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-J7-aMa">
+                        <rect key="frame" x="75" y="28" width="218" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTL-OL-l12">
+                        <rect key="frame" x="232" y="8" width="60.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DeQ-Wn-K8M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="3xC-X7-nEd"/>
+                    <constraint firstItem="jJi-J7-aMa" firstAttribute="top" secondItem="WTL-OL-l12" secondAttribute="bottom" constant="2" id="6eS-CY-KDH"/>
+                    <constraint firstItem="haZ-a0-SqX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9e9-gZ-djL"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jJi-J7-aMa" secondAttribute="bottom" constant="5" id="DMz-ya-hqD"/>
+                    <constraint firstAttribute="trailing" secondItem="jJi-J7-aMa" secondAttribute="trailing" constant="2" id="NtT-cS-JLe"/>
+                    <constraint firstItem="WTL-OL-l12" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="haZ-a0-SqX" secondAttribute="trailing" constant="5" id="Soo-IB-5DA"/>
+                    <constraint firstItem="jJi-J7-aMa" firstAttribute="top" secondItem="haZ-a0-SqX" secondAttribute="bottom" constant="2" id="WKq-SH-4qs"/>
+                    <constraint firstItem="DeQ-Wn-K8M" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cJb-Jk-HyW"/>
+                    <constraint firstItem="haZ-a0-SqX" firstAttribute="leading" secondItem="DeQ-Wn-K8M" secondAttribute="trailing" constant="10" id="esp-dw-7LO"/>
+                    <constraint firstItem="WTL-OL-l12" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rnx-N3-fnF"/>
+                    <constraint firstAttribute="trailing" secondItem="WTL-OL-l12" secondAttribute="trailing" constant="2" id="spC-yw-4fx"/>
+                    <constraint firstItem="jJi-J7-aMa" firstAttribute="leading" secondItem="haZ-a0-SqX" secondAttribute="leading" id="y6B-al-yJe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="WTL-OL-l12" id="Pfd-Zp-T3p"/>
+                <outlet property="messageLabel" destination="jJi-J7-aMa" id="jwQ-lr-Apd"/>
+                <outlet property="nameLabel" destination="haZ-a0-SqX" id="sKc-aP-EqD"/>
+                <outlet property="profileImageView" destination="DeQ-Wn-K8M" id="JO6-Xk-lfL"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="388"/>
+        </tableViewCell>
+    </objects>
+</document>
