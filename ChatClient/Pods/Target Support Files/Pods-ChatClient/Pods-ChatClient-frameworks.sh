@@ -87,11 +87,15 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ChatClient/AFNetworking.framework"
   install_framework "Pods-ChatClient/ActiveLabel.framework"
   install_framework "Pods-ChatClient/Bolts.framework"
+  install_framework "Pods-ChatClient/JSQMessagesViewController.framework"
+  install_framework "Pods-ChatClient/JSQSystemSoundPlayer.framework"
   install_framework "Pods-ChatClient/Parse.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ChatClient/AFNetworking.framework"
   install_framework "Pods-ChatClient/ActiveLabel.framework"
   install_framework "Pods-ChatClient/Bolts.framework"
+  install_framework "Pods-ChatClient/JSQMessagesViewController.framework"
+  install_framework "Pods-ChatClient/JSQSystemSoundPlayer.framework"
   install_framework "Pods-ChatClient/Parse.framework"
 fi

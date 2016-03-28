@@ -7,5 +7,6 @@ target 'ChatClient' do
 pod 'Parse'
 pod 'AFNetworking'
 pod 'ActiveLabel'
+pod 'JSQMessagesViewController'
 end
 
