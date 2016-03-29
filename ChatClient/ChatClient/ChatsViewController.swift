@@ -45,16 +45,43 @@ class ChatsViewController: UIViewController {
 extension ChatsViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ChatCell", forIndexPath: indexPath) as! ChatCell
-        cell.nameLabel.text = "Aswani Nerella"
-        cell.dateLabel.text = "9:30 PM"
-        cell.messageLabel.text = "Hello ... "
+        
+        let row = indexPath.row
+        
+        
+        if row%2 == 0 {
+            cell.profileImageView.image = UIImage(named:"CircledUserFemale-50")
+            cell.nameLabel.text = "Prasu"
+            cell.dateLabel.text = "10:30 PM"
+            cell.messageLabel.text = "Hello ... "
+        }
+        else {
+            cell.profileImageView.image = UIImage(named:"CircledUserMale-50")
+            cell.nameLabel.text = "Aswani"
+            cell.dateLabel.text = "9:30 PM"
+            cell.messageLabel.text = "Hi"
+        }
+        
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        showChatDetailView()
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+    }
+    
+    func showChatDetailView() {
+        let chatDetailsStoryboard = UIStoryboard(name: "ChatDetails", bundle: nil)
+        let chatDetailsViewController = chatDetailsStoryboard.instantiateViewControllerWithIdentifier("chatDetailsViewController") as! ChatDetailsViewController
+        chatDetailsViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(chatDetailsViewController, animated: false)
+        
     }
     
 }

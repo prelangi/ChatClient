@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Contacts-->
         <scene sceneID="8uO-xx-WXy">
             <objects>
                 <viewController id="hsO-xg-UTk" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ePr-Yy-8H7"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="ePr-Yy-8H7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12K-Dt-3TM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

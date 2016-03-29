@@ -19,6 +19,8 @@
 		CACB28C01CA47A4900B2648D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACB28BE1CA47A4900B2648D /* Main.storyboard */; };
 		CACB28C21CA47A4900B2648D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CACB28C11CA47A4900B2648D /* Assets.xcassets */; };
 		CACB28C51CA47A4900B2648D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACB28C31CA47A4900B2648D /* LaunchScreen.storyboard */; };
+		CACD3CA01CAA418C00FE3466 /* ChatDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACD3C9F1CAA418C00FE3466 /* ChatDetails.storyboard */; };
+		CACD3CA21CAA438000FE3466 /* ChatDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACD3CA11CAA438000FE3466 /* ChatDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CACB28C11CA47A4900B2648D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CACB28C41CA47A4900B2648D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CACB28C61CA47A4900B2648D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CACD3C9F1CAA418C00FE3466 /* ChatDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatDetails.storyboard; sourceTree = "<group>"; };
+		CACD3CA11CAA438000FE3466 /* ChatDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CAAE393F1CA8F9BB00558D4E /* ChatsViewController.swift */,
+				CACD3CA11CAA438000FE3466 /* ChatDetailsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				CA3372771CA526BA00D6FF78 /* Chats.storyboard */,
 				CA3372791CA526CF00D6FF78 /* Contacts.storyboard */,
 				CA33727B1CA526DF00D6FF78 /* Settings.storyboard */,
+				CACD3C9F1CAA418C00FE3466 /* ChatDetails.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				CAAE393E1CA7A1EE00558D4E /* ChatCell.xib in Resources */,
 				CACB28C51CA47A4900B2648D /* LaunchScreen.storyboard in Resources */,
 				CACB28C21CA47A4900B2648D /* Assets.xcassets in Resources */,
+				CACD3CA01CAA418C00FE3466 /* ChatDetails.storyboard in Resources */,
 				CA33727A1CA526CF00D6FF78 /* Contacts.storyboard in Resources */,
 				CA33727C1CA526DF00D6FF78 /* Settings.storyboard in Resources */,
 				CA3372781CA526BA00D6FF78 /* Chats.storyboard in Resources */,
@@ -265,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACB28BD1CA47A4900B2648D /* ViewController.swift in Sources */,
+				CACD3CA21CAA438000FE3466 /* ChatDetailsViewController.swift in Sources */,
 				CACB28BB1CA47A4900B2648D /* AppDelegate.swift in Sources */,
 				CAAE39401CA8F9BB00558D4E /* ChatsViewController.swift in Sources */,
 				CAAE393D1CA7A1EE00558D4E /* ChatCell.swift in Sources */,
