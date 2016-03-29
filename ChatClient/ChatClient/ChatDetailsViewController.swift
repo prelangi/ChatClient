@@ -91,6 +91,24 @@ class ChatDetailsViewController: JSQMessagesViewController {
         }
     }
     
+    //Also need to add height for cell
+    override func collectionView(collectionView: JSQMessagesCollectionView!, attributedTextForMessageBubbleTopLabelAtIndexPath indexPath: NSIndexPath!) -> NSAttributedString! {
+        
+        let message = messages[indexPath.row]
+        if message.senderId == "Aswani" {
+            let attributedStringColour = [NSForegroundColorAttributeName : UIColor.blueColor()];
+            let senderName = NSAttributedString(string: "Aswani Nerella",attributes: attributedStringColour)
+            return senderName
+        }
+        else {
+            return nil
+        }
+    }
+    
+    override func collectionView(collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+        return 20
+    }
+    
 
     /*
     // MARK: - Navigation
