@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9912AC8E3EE3736127226797'
-               BlueprintName = 'Pods-ChatClient'
+               BlueprintIdentifier = 'C51CDA384A3C4E821D42C199'
+               BlueprintName = 'SwiftPhoenixClient-SwiftPhoenixClient'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_ChatClient.framework'>
+               BuildableName = 'SwiftPhoenixClient.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

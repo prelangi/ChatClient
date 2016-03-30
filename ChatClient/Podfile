@@ -8,5 +8,6 @@ pod 'Parse'
 pod 'AFNetworking'
 pod 'ActiveLabel'
 pod 'JSQMessagesViewController'
+pod "SwiftPhoenixClient"
 end
 
