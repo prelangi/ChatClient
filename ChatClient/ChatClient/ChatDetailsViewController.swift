@@ -9,7 +9,7 @@
 import UIKit
 import JSQMessagesViewController
 
-class ChatDetailsViewController: JSQMessagesViewController {
+class ChatDetailsViewController: JSQMessagesViewController,UIActionSheetDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var messages = [JSQMessage]()
@@ -109,6 +109,14 @@ class ChatDetailsViewController: JSQMessagesViewController {
         return 20
     }
     
+    override func didPressAccessoryButton(sender: UIButton!) {
+        self.inputToolbar?.contentView?.textView?.resignFirstResponder()
+        
+        let sheet = UIActionSheet(title: "Media Messages", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Send Photo","Send Video","Send Location")
+        
+        sheet.showFromToolbar(self.inputToolbar!)
+        
+    }
 
     /*
     // MARK: - Navigation
