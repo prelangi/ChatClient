@@ -21,14 +21,12 @@ PODS:
   - JSQSystemSoundPlayer (2.0.1)
   - Parse (1.13.0):
     - Bolts/Tasks (~> 1.6)
-  - SwiftPhoenixClient (0.1.0)
 
 DEPENDENCIES:
   - ActiveLabel
   - AFNetworking
   - JSQMessagesViewController
   - Parse
-  - SwiftPhoenixClient
 
 SPEC CHECKSUMS:
   ActiveLabel: c7b011767b5660faacf8a3629174a9a775886b8d
@@ -37,6 +35,5 @@ SPEC CHECKSUMS:
   JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
-  SwiftPhoenixClient: 79b9f9d6fe27687424dc580d28dad9471cab36f4
 
 COCOAPODS: 0.39.0

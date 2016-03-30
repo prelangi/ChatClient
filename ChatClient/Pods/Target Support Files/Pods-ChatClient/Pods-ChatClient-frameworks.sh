@@ -90,7 +90,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ChatClient/JSQMessagesViewController.framework"
   install_framework "Pods-ChatClient/JSQSystemSoundPlayer.framework"
   install_framework "Pods-ChatClient/Parse.framework"
-  install_framework "Pods-ChatClient/SwiftPhoenixClient.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ChatClient/AFNetworking.framework"
@@ -99,5 +98,4 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ChatClient/JSQMessagesViewController.framework"
   install_framework "Pods-ChatClient/JSQSystemSoundPlayer.framework"
   install_framework "Pods-ChatClient/Parse.framework"
-  install_framework "Pods-ChatClient/SwiftPhoenixClient.framework"
 fi

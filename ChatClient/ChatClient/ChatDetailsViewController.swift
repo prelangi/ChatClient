@@ -9,6 +9,7 @@
 import UIKit
 import JSQMessagesViewController
 
+
 class ChatDetailsViewController: JSQMessagesViewController {
 
     @IBOutlet weak var tableView: UITableView!
