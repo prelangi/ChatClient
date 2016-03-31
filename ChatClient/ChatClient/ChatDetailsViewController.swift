@@ -117,6 +117,16 @@ class ChatDetailsViewController: JSQMessagesViewController,UIActionSheetDelegate
         sheet.showFromToolbar(self.inputToolbar!)
         
     }
+    
+    func actionSheet(actionSheet: UIActionSheet, didDismissWithButtonIndex buttonIndex: Int) {
+        if (buttonIndex == actionSheet.cancelButtonIndex) {
+            self.inputToolbar!.contentView!.textView?.becomeFirstResponder()
+            
+            return;
+        }
+        
+        self.finishSendingMessage()
+    }
 
     /*
     // MARK: - Navigation
