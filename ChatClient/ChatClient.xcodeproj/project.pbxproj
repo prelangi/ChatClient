@@ -21,6 +21,10 @@
 		CACB28C51CA47A4900B2648D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACB28C31CA47A4900B2648D /* LaunchScreen.storyboard */; };
 		CACD3CA01CAA418C00FE3466 /* ChatDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACD3C9F1CAA418C00FE3466 /* ChatDetails.storyboard */; };
 		CACD3CA21CAA438000FE3466 /* ChatDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACD3CA11CAA438000FE3466 /* ChatDetailsViewController.swift */; };
+		CACFCB691CAE42B700BD27A6 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFCB671CAE42B700BD27A6 /* ProfileCell.swift */; };
+		CACFCB6A1CAE42B700BD27A6 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACFCB681CAE42B700BD27A6 /* ProfileCell.xib */; };
+		CACFCB6D1CAE46AA00BD27A6 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFCB6B1CAE46AA00BD27A6 /* SettingsCell.swift */; };
+		CACFCB6E1CAE46AA00BD27A6 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACFCB6C1CAE46AA00BD27A6 /* SettingsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		CACB28C61CA47A4900B2648D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CACD3C9F1CAA418C00FE3466 /* ChatDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatDetails.storyboard; sourceTree = "<group>"; };
 		CACD3CA11CAA438000FE3466 /* ChatDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailsViewController.swift; sourceTree = "<group>"; };
+		CACFCB671CAE42B700BD27A6 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		CACFCB681CAE42B700BD27A6 /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		CACFCB6B1CAE46AA00BD27A6 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		CACFCB6C1CAE46AA00BD27A6 /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 			children = (
 				CAAE393B1CA7A1EE00558D4E /* ChatCell.swift */,
 				CAAE393C1CA7A1EE00558D4E /* ChatCell.xib */,
+				CACFCB671CAE42B700BD27A6 /* ProfileCell.swift */,
+				CACFCB681CAE42B700BD27A6 /* ProfileCell.xib */,
+				CACFCB6B1CAE46AA00BD27A6 /* SettingsCell.swift */,
+				CACFCB6C1CAE46AA00BD27A6 /* SettingsCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -209,8 +221,10 @@
 				CACB28C51CA47A4900B2648D /* LaunchScreen.storyboard in Resources */,
 				CACB28C21CA47A4900B2648D /* Assets.xcassets in Resources */,
 				CACD3CA01CAA418C00FE3466 /* ChatDetails.storyboard in Resources */,
+				CACFCB6E1CAE46AA00BD27A6 /* SettingsCell.xib in Resources */,
 				CA33727A1CA526CF00D6FF78 /* Contacts.storyboard in Resources */,
 				CA33727C1CA526DF00D6FF78 /* Settings.storyboard in Resources */,
+				CACFCB6A1CAE42B700BD27A6 /* ProfileCell.xib in Resources */,
 				CA3372781CA526BA00D6FF78 /* Chats.storyboard in Resources */,
 				CACB28C01CA47A4900B2648D /* Main.storyboard in Resources */,
 			);
@@ -271,9 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACFCB6D1CAE46AA00BD27A6 /* SettingsCell.swift in Sources */,
 				CACB28BD1CA47A4900B2648D /* ViewController.swift in Sources */,
 				CACD3CA21CAA438000FE3466 /* ChatDetailsViewController.swift in Sources */,
 				CACB28BB1CA47A4900B2648D /* AppDelegate.swift in Sources */,
+				CACFCB691CAE42B700BD27A6 /* ProfileCell.swift in Sources */,
 				CAAE39401CA8F9BB00558D4E /* ChatsViewController.swift in Sources */,
 				CAAE393D1CA7A1EE00558D4E /* ChatCell.swift in Sources */,
 			);
