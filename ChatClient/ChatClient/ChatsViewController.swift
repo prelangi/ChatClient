@@ -14,6 +14,8 @@ class ChatsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.leftBarButtonItem = editButtonItem()
+        
         //register tableView cell xib
         let chatNib = UINib(nibName: "ChatCell", bundle: nil)
         tableView.registerNib(chatNib, forCellReuseIdentifier: "ChatCell")
@@ -83,5 +85,29 @@ extension ChatsViewController: UITableViewDelegate,UITableViewDataSource {
         self.navigationController?.pushViewController(chatDetailsViewController, animated: false)
         
     }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        	    // Return false if you do not want the specified item to be editable.
+        	    return true
+	}
+
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        	    if editingStyle == .Delete {
+                    // Delete the row from the data source
+
+            	} else if editingStyle == .Insert {
+            	        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+		    }
+    }
+    
+    //Need this function to enable the "Delete" button
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        tableView.setEditing(editing, animated: animated)
+    }
+    
+    
+
     
 }

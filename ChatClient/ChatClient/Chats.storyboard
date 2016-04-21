@@ -31,7 +31,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chats" id="a1O-pw-vW6">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="6Ue-zC-FMr"/>
                         <barButtonItem key="rightBarButtonItem" image="Edit-24" id="nYt-ji-7HP"/>
                     </navigationItem>
                     <connections>
