@@ -8,7 +8,7 @@
         <!--Contacts-->
         <scene sceneID="8uO-xx-WXy">
             <objects>
-                <viewController id="hsO-xg-UTk" sceneMemberID="viewController">
+                <viewController id="hsO-xg-UTk" customClass="UserContactsViewController" customModule="ChatClient" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l8u-0M-BhE"/>
                         <viewControllerLayoutGuide type="bottom" id="LUF-Fa-bRp"/>

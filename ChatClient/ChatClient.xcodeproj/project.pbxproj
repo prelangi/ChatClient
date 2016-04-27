@@ -25,6 +25,9 @@
 		CACFCB6A1CAE42B700BD27A6 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACFCB681CAE42B700BD27A6 /* ProfileCell.xib */; };
 		CACFCB6D1CAE46AA00BD27A6 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFCB6B1CAE46AA00BD27A6 /* SettingsCell.swift */; };
 		CACFCB6E1CAE46AA00BD27A6 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACFCB6C1CAE46AA00BD27A6 /* SettingsCell.xib */; };
+		CAEC11B01CD087350012C3FF /* UserContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC11AF1CD087350012C3FF /* UserContactsViewController.swift */; };
+		CAEC11B21CD08DF40012C3FF /* ContactDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEC11B11CD08DF40012C3FF /* ContactDetails.storyboard */; };
+		CAEC11B41CD08E590012C3FF /* UserContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC11B31CD08E590012C3FF /* UserContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		CACFCB681CAE42B700BD27A6 /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		CACFCB6B1CAE46AA00BD27A6 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		CACFCB6C1CAE46AA00BD27A6 /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		CAEC11AF1CD087350012C3FF /* UserContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsViewController.swift; sourceTree = "<group>"; };
+		CAEC11B11CD08DF40012C3FF /* ContactDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactDetails.storyboard; sourceTree = "<group>"; };
+		CAEC11B31CD08E590012C3FF /* UserContactDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 			children = (
 				CAAE393F1CA8F9BB00558D4E /* ChatsViewController.swift */,
 				CACD3CA11CAA438000FE3466 /* ChatDetailsViewController.swift */,
+				CAEC11AF1CD087350012C3FF /* UserContactsViewController.swift */,
+				CAEC11B31CD08E590012C3FF /* UserContactDetailsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 				CA3372791CA526CF00D6FF78 /* Contacts.storyboard */,
 				CA33727B1CA526DF00D6FF78 /* Settings.storyboard */,
 				CACD3C9F1CAA418C00FE3466 /* ChatDetails.storyboard */,
+				CAEC11B11CD08DF40012C3FF /* ContactDetails.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -220,6 +229,7 @@
 				CAAE393E1CA7A1EE00558D4E /* ChatCell.xib in Resources */,
 				CACB28C51CA47A4900B2648D /* LaunchScreen.storyboard in Resources */,
 				CACB28C21CA47A4900B2648D /* Assets.xcassets in Resources */,
+				CAEC11B21CD08DF40012C3FF /* ContactDetails.storyboard in Resources */,
 				CACD3CA01CAA418C00FE3466 /* ChatDetails.storyboard in Resources */,
 				CACFCB6E1CAE46AA00BD27A6 /* SettingsCell.xib in Resources */,
 				CA33727A1CA526CF00D6FF78 /* Contacts.storyboard in Resources */,
@@ -285,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEC11B01CD087350012C3FF /* UserContactsViewController.swift in Sources */,
+				CAEC11B41CD08E590012C3FF /* UserContactDetailsViewController.swift in Sources */,
 				CACFCB6D1CAE46AA00BD27A6 /* SettingsCell.swift in Sources */,
 				CACB28BD1CA47A4900B2648D /* ViewController.swift in Sources */,
 				CACD3CA21CAA438000FE3466 /* ChatDetailsViewController.swift in Sources */,

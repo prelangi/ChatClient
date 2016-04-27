@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Contacts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate {
 
     var window: UIWindow?
-
+    let tabBarController = UITabBarController()
+    
+    class func getAppDelegate() -> AppDelegate {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //contactStore to get contacts into the app
+        var contactStore = CNContactStore()
+        
+        //Add tabs to the apps
         let chatsStoryBoard = UIStoryboard(name: "Chats", bundle: nil)
         let chatsNVC = chatsStoryBoard.instantiateViewControllerWithIdentifier("ChatsNavigationController") as! UINavigationController
         let chatsViewController = chatsStoryBoard.instantiateViewControllerWithIdentifier("ChatsViewController")
@@ -33,9 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate
         settingsNVC.tabBarItem.title = "Settings"
         settingsNVC.tabBarItem.image = UIImage(named: "Settings-30")
         
-        let tabBarController = UITabBarController()
+        
         tabBarController.delegate = self
-        tabBarController.viewControllers = [contactsNVC,chatsNVC,settingsNVC]
+        tabBarController.viewControllers = [chatsNVC,contactsNVC,settingsNVC]
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
